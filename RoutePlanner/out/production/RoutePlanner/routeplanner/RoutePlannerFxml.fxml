@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="807.0" prefWidth="740.0" style="-fx-background-color: #000022;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="routeplanner.RoutePlannerFxmlController">
+   <children>
+      <Label layoutX="288.0" layoutY="81.0" text="Route Planner" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei Bold" size="26.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="origem" editable="true" layoutX="206.0" layoutY="131.0" prefHeight="39.0" prefWidth="329.0" promptText="Origem" stylesheets="@style.css" />
+      <ComboBox fx:id="destino" accessibleHelp="Destno" accessibleText="Destino" editable="true" layoutX="206.0" layoutY="201.0" prefHeight="39.0" prefWidth="329.0" promptText="Destino" style="-fx-background-color: #000022; -fx-border-color: #3B73BF; -fx-text-fill: #FFF;" stylesheets="@style.css" />
+      <Button fx:id="btn_gera_rota" layoutX="206.0" layoutY="263.0" mnemonicParsing="false" onAction="#btn_gera_rota" prefHeight="39.0" prefWidth="329.0" style="-fx-background-color: #3B73BF;" text="Gerar Rota" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ListView fx:id="resView" layoutX="16.0" layoutY="338.0" prefHeight="456.0" prefWidth="709.0" stylesheets="@style.css" />
+   </children>
+</AnchorPane>

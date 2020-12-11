@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="RoutePlanner.jnlp">
+  <information>
+    <title>RoutePlanner</title>
+    <vendor>esdra</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="RoutePlanner.jar" size="22628" download="eager" />
+    <jar href="lib\java-json.jar" size="84697" download="eager" />
+    <jar href="lib\json-20201115.jar" size="69370" download="eager" />
+    <jar href="lib\json-lib-1.0.1-jdk15.jar" size="54995" download="eager" />
+    <jar href="lib\json-simple-1.1.1.jar" size="23931" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="RoutePlanner" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="routeplanner.RoutePlanner"  name="RoutePlanner" />
+  <update check="always"/>
+</jnlp>
