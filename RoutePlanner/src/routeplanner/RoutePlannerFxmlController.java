@@ -37,7 +37,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
-import org.json.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -69,7 +68,7 @@ public class RoutePlannerFxmlController implements Initializable {
     private TableColumn<Linhas, String> tb_estacao;
 
     @FXML
-    private void btn_gera_rota(ActionEvent event) throws BadPaddingException, IllegalBlockSizeException, InvalidKeyException, NoSuchPaddingException, NoSuchAlgorithmException, IOException, UnknownHostException, ClassNotFoundException, InterruptedException, FileNotFoundException, JSONException {
+    private void btn_gera_rota(ActionEvent event) throws BadPaddingException, IllegalBlockSizeException, InvalidKeyException, NoSuchPaddingException, NoSuchAlgorithmException, IOException, UnknownHostException, ClassNotFoundException, InterruptedException, FileNotFoundException {
 
         String stationOrigem = origem.getSelectionModel().getSelectedItem();
         String stationDestino = destino.getSelectionModel().getSelectedItem();
@@ -116,7 +115,7 @@ public class RoutePlannerFxmlController implements Initializable {
         destino.getItems().addAll(listDestino);
     }
 
-    private void callServer(byte[] iorigem, byte[] idestino) throws UnknownHostException, IOException, ClassNotFoundException, InterruptedException, FileNotFoundException, IOException, JSONException {
+    private void callServer(byte[] iorigem, byte[] idestino) throws UnknownHostException, IOException, ClassNotFoundException, InterruptedException, FileNotFoundException, IOException {
         InetAddress host = InetAddress.getLocalHost();
         Socket socket = null;
         ObjectOutputStream oos = null;
